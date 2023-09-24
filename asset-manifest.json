@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/vamshi/static/css/main.a873f799.css",
-    "main.js": "/vamshi/static/js/main.5c320084.js",
+    "main.js": "/vamshi/static/js/main.00d7defa.js",
     "index.html": "/vamshi/index.html",
     "main.a873f799.css.map": "/vamshi/static/css/main.a873f799.css.map",
-    "main.5c320084.js.map": "/vamshi/static/js/main.5c320084.js.map"
+    "main.00d7defa.js.map": "/vamshi/static/js/main.00d7defa.js.map"
   },
   "entrypoints": [
     "static/css/main.a873f799.css",
-    "static/js/main.5c320084.js"
+    "static/js/main.00d7defa.js"
   ]
 }
