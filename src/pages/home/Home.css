@@ -1,0 +1,157 @@
+.home__parent{
+    display: flex;
+}
+
+.home_section__1{
+    min-width: 36%;
+    background-color: var(--secondary-bg);
+    height: 100vh;
+    position: relative;
+}
+
+.profile__card{
+    background-color: var(--primary-bg);
+    width: 80%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 2rem;
+    top: 10%;
+    gap: 12px;
+    right: -20%;
+    z-index: 998;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px 2px var(--primary-bg);
+}
+
+.profile__image{
+    width: 60%;
+    height: 40%;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profile__image img{
+    width: 100%;
+    height: 100%;
+}
+
+.profile__name{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1.2rem;
+}
+
+.profile__name h2{
+    font-size: 2.4rem;
+    color: aliceblue;
+    margin: 0px;
+}
+
+.line{
+    background-color: var(--secondary-bg);
+    height: 4px;
+    width: 3rem;
+    border-radius: 3rem;
+}
+
+.profile__name h5{
+    margin: 0px;
+    font-size: 1.4rem;
+    letter-spacing: 3px;
+    color: var(--font-color);
+}
+
+.home_section__2{
+    width: 67%;
+    padding: 5rem;
+    padding-left: 7rem;
+}
+
+.home_section__2 h1{
+    font-size: 3.8rem;
+    margin: 0px;
+}
+
+.home_section__2 h3{
+    margin: 0px;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.home__buttons{
+    display: flex;
+    width: 40%;
+    gap: 3rem;
+    padding: 1.2rem;
+    justify-content: space-around;
+}
+
+.home__buttons a:nth-child(n){
+    border: 2px solid var(--secondary-bg);
+    padding: 8px 1.8rem;
+    border-radius: 12px;
+    text-decoration: none;
+    color: var(--primary-bg);
+    box-shadow: 0px 0px 3px 0.1px var(--primary-bg);
+}
+
+@media (max-width: 768px){
+    .home__parent{
+        flex-direction: column;
+    }
+
+    .home_section__1{
+        width: 100%;
+        background-color: #fff;
+        height: 40vh;
+    }
+
+    .profile__card{
+        right: 10%;
+        width: 80%;
+    }
+
+    .profile__image{
+        width: 70%;
+    }
+
+    .profile__name h2{
+        font-size: 2rem;
+        font-weight: 700;
+        letter-spacing: 2px;
+    }
+
+    .home_section__2{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+        padding-top: 14rem;
+        padding-bottom: 3rem;
+        align-items: center;
+        color: var(--text-color);
+        background-color: var(--secondary-bg);
+    }
+
+    .home_section__2 h1, .home_section__2 h3, .home_section__2 p{
+        margin: 0px;
+        padding: 0px 2rem;
+    }
+
+    
+    .home__buttons{
+        width: fit-content;
+        gap: 3rem;
+        justify-content: space-evenly;
+    }
+
+    .home__buttons a:nth-child(n){
+        border: 2px solid var(--text-color);
+        color: var(--text-color);
+    }
+}
