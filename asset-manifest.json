@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.a873f799.css",
-    "main.js": "/static/js/main.298ce5d5.js",
-    "index.html": "/index.html",
-    "main.a873f799.css.map": "/static/css/main.a873f799.css.map",
-    "main.298ce5d5.js.map": "/static/js/main.298ce5d5.js.map"
+    "main.css": "/vamshidharonline/static/css/main.a873f799.css",
+    "main.js": "/vamshidharonline/static/js/main.ba4b49cf.js",
+    "index.html": "/vamshidharonline/index.html",
+    "main.a873f799.css.map": "/vamshidharonline/static/css/main.a873f799.css.map",
+    "main.ba4b49cf.js.map": "/vamshidharonline/static/js/main.ba4b49cf.js.map"
   },
   "entrypoints": [
     "static/css/main.a873f799.css",
-    "static/js/main.298ce5d5.js"
+    "static/js/main.ba4b49cf.js"
   ]
 }
