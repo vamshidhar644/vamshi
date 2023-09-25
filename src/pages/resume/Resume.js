@@ -39,21 +39,24 @@ const Resume = () => {
         <div className="section__body">
           <div className="section__info">
             <strong>Bachelor of Technology</strong>
-            <h5>Computer Science and Technology</h5>
+            <h5>Computer Science and Engineering</h5>
             <p>Vellore Institute of Technology, Amaravati, Andhra Pradesh</p>
-            <p>CGPA: 8.97</p>
+            <p>CGPA: 8.97 (till 7th semester)</p>
+            <h6>2020 - 2024</h6>
           </div>
 
           <div className="section__info">
             <strong>Intermediate</strong>
             <p>Akshara Junior College, Hyderabad</p>
             <p>Perc: 96.8%</p>
+            <h6>2018 - 2020</h6>
           </div>
 
           <div className="section__info">
             <strong>High School</strong>
             <p>Jawahar Navodaya Vidyalaya, Wargal</p>
             <p>Perc: 81.4%</p>
+            <h6>2013 - 2018</h6>
           </div>
         </div>
       </div>

@@ -1,9 +1,10 @@
 :root{
   --primary-bg: #27374D;
-  --secondary-bg: #015f7a;
+  --secondary-bg: #56667e;
   --font-color: #a2acbd;
   --text-color: #ddf2ff;
-  --box-bg: #c2c9d5;
+  --box-bg: #8c939e;
+  --secondary-text-color: #3e4756;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&family=VT323&display=swap');

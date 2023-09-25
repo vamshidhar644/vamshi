@@ -25,8 +25,20 @@ const Home = () => {
         <h1>HELLO</h1>
         <h3>I build websites with frontend & backend</h3>
         <div className="home__buttons">
-          <Link to="/resume">Resume</Link>
-          <Link to="/projects">Projects</Link>
+          <a href="vamshidhar_resume.pdf" download="vamshidhar_resume.pdf">
+            Resume
+          </a>
+          <Link
+            to="/projects"
+            onClick={() => {
+              window.scrollTo({
+                top: 0,
+                behavior: 'smooth',
+              });
+            }}
+          >
+            Projects
+          </Link>
         </div>
         <p>
           Aspiring computer science student with a passion for web development
