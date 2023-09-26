@@ -5,9 +5,8 @@
     min-height: 100vh;
 }
 
-
 .contact-card { 
-    width: 350px;
+    min-width: 30%;
   }
   
   .contact-title {
@@ -191,6 +190,9 @@
 
   
    @media screen and (max-width: 600px){
+    .contact-container{
+      width: 100%;
+    }
     .contact-card{
       width: 90%;
     }

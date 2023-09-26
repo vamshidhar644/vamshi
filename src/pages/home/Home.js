@@ -5,15 +5,19 @@ import { Link } from 'react-router-dom';
 
 const Home = () => {
   return (
-    <div className="home__parent">
-      <div className="home_section__1">
-        <div className="profile__card">
+    <div className="home__parent d-flex">
+      <div className="home_section__1 position-relative">
+        <div className="profile__card position-absolute d-flex flex-column justify-content-between align-items-center pt-5">
           <div className="profile__image">
-            <img src={process.env.PUBLIC_URL + '/assets/me.jpg'} alt="" />
+            <img
+              src={process.env.PUBLIC_URL + '/assets/me.jpg'}
+              alt=""
+              className="w-100 h-100"
+            />
           </div>
-          <div className="profile__name">
-            <h2>VAMSHIDHAR DAWOOR</h2>
-            <div className="line" />
+          <div className="profile__name w-100 d-flex flex-column align-items-center text-center">
+            <h2 className="animated slideInUp">VAMSHIDHAR DAWOOR</h2>
+            <div className="line my-4" />
             <h5>MERN DEV</h5>
           </div>
           <div className="card__footer">
@@ -21,10 +25,10 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="home_section__2">
+      <div className="home_section__2 pt-5">
         <h1>HELLO</h1>
         <h3>I build websites with frontend & backend</h3>
-        <div className="home__buttons">
+        <div className="home__buttons d-flex p-4">
           <a href="vamshidhar_resume.pdf" download="vamshidhar_resume.pdf">
             Resume
           </a>

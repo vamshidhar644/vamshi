@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './Navbar.css';
+import './Toggle.css';
 import { Link } from 'react-router-dom';
 
 const Navbar = () => {
@@ -24,24 +25,39 @@ const Navbar = () => {
   }, []);
 
   return (
-    <header className={isNavFixed ? 'fixed-nav' : ''}>
-      <nav className={`navbar`}>
+    <header className={isNavFixed ? 'fixed-nav position-fixed w-100' : ''}>
+      <nav className="navbar p-4">
         <div className="home__logo">
-          <Link to="/" onClick={() => setToggle(false)}>
+          <Link
+            to="/"
+            onClick={() => setToggle(false)}
+            className="d-flex align-items-center"
+          >
             <img src={process.env.PUBLIC_URL + '/assets/logo.png'} alt="" />
             VAMSHIDHAR<span className="lastname">DAWOOR</span>
           </Link>
         </div>
         <div className="page__paths">
           <div className="toggle" onChange={() => setToggle(!isClicked)}>
-            <input type="checkbox" id="checkbox" checked={isClicked} />
-            <label for="checkbox" class="toggle">
-              <div class="bars" id="bar1"></div>
-              <div class="bars" id="bar2"></div>
-              <div class="bars" id="bar3"></div>
+            <input
+              type="checkbox"
+              id="checkbox"
+              checked={isClicked}
+              onChange=""
+            />
+            <label for="checkbox" className="toggle">
+              <div className="bars" id="bar1"></div>
+              <div className="bars" id="bar2"></div>
+              <div className="bars" id="bar3"></div>
             </label>
           </div>
-          <ul className={isClicked ? 'menu_open' : 'menu_close'}>
+          <ul
+            className={`${
+              isClicked
+                ? 'menu_open d-flex position-fixed m-0 h-100 w-100 flex-column justify-content-start align-items-center pt-5'
+                : 'menu_close d-flex m-0'
+            } p-0`}
+          >
             <li onClick={() => setToggle(false)}>
               <Link to="/resume">Resume</Link>
             </li>

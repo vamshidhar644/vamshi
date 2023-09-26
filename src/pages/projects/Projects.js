@@ -26,21 +26,25 @@ const Projects = () => {
       </center>
 
       <hr />
-      <div className="projects__container">
+      <div className="projects__container d-flex flex-column">
         {projects.map((project, i) => {
           return (
             <div className="project__box" key={i}>
-              <div className="project_box__1">
-                <div className="project__header">
-                  <h2>{project.title}</h2>
-                  <h3>{project.client}</h3>
+              <div className="project_box__1 d-flex justify-content-around flex-column">
+                <div className="project__header px-5">
+                  <h2 className='m-0'>{project.title}</h2>
+                  <h3 className='m-0'>{project.client}</h3>
                   <Link to={project.link}>Link</Link>
                 </div>
 
-                <p>{project.desc}</p>
+                <p className='px-5'>{project.desc}</p>
               </div>
               <div className="project_box__2">
-                <img src={process.env.PUBLIC_URL + '/assets/' +project.image} alt="" />
+                <img
+                  src={process.env.PUBLIC_URL + '/assets/' + project.image}
+                  alt=""
+                  className='h-100 w-100'
+                />
               </div>
             </div>
           );

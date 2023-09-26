@@ -1,33 +1,18 @@
 .resume__parent{
     padding: 2rem 20rem;
-    display: flex;
-    flex-direction: column;
-}
-
-h2{
-    font-size: 2.4rem;
-    margin: 0px;
-    color: var(--primary-bg);
-}
-
-hr{
-    width: 100%;
 }
 
 .section__body{
     display: flex;
     flex-direction: column;
     gap: 1.4rem;
+    max-width: 100%;
 }
 
 .resume__parent div:nth-child(n) h4{
     font-size: 1.6rem;
     margin: 12px 0px;
     font-weight: 500;
-}
-
-.section__body{
-    max-width: 100%;
 }
 
 .section__body div:nth-child(n){
@@ -60,10 +45,7 @@ hr{
 }
 
 .skills__grid{
-    display: flex;
-    flex-wrap: wrap;
     gap: 1.4rem;
-    justify-content: center;
 }
 
 .skills__grid div:nth-child(n){
@@ -79,7 +61,6 @@ hr{
 
 .Skill__box .icon{
     font-size: 1.3rem;
-    display: flex;
 }
 
 .education__section h6{
@@ -112,7 +93,7 @@ hr{
     }
 
     .skills__grid{
-       display: grid;
+       display: grid !important;
        grid-template-columns: repeat(2, auto);
     }
 }

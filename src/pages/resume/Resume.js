@@ -64,7 +64,7 @@ const Resume = () => {
       <hr />
       <div className="skills__section">
         <h4>Skills set</h4>
-        <div className="skills__grid">
+        <div className="skills__grid d-flex flex-wrap justify-content-center">
           {skills &&
             skills.map((skill, i) => {
               return (
