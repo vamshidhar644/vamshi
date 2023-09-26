@@ -1,5 +1,6 @@
 import React from 'react';
 import './Home.css';
+import './Animations.css';
 import Socials from '../../components/Socials';
 import { Link } from 'react-router-dom';
 
@@ -7,7 +8,7 @@ const Home = () => {
   return (
     <div className="home__parent d-flex">
       <div className="home_section__1 position-relative">
-        <div className="profile__card position-absolute d-flex flex-column justify-content-between align-items-center pt-5">
+        <div className="profile__card fade-in position-absolute d-flex flex-column justify-content-between align-items-center pt-5">
           <div className="profile__image">
             <img
               src={process.env.PUBLIC_URL + '/assets/me.jpg'}
@@ -16,7 +17,7 @@ const Home = () => {
             />
           </div>
           <div className="profile__name w-100 d-flex flex-column align-items-center text-center">
-            <h2 className="animated slideInUp">VAMSHIDHAR DAWOOR</h2>
+            <h2>VAMSHIDHAR DAWOOR</h2>
             <div className="line my-4" />
             <h5>MERN DEV</h5>
           </div>

@@ -1,0 +1,104 @@
+
+/* A N I M A T I O N S */
+
+.profile__name h2 {
+    -weight:bold;
+    animation-name: focus-in-contract;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    letter-spacing: 2px;
+    /* shorthand
+    animation: focus-in-contract 1s linear 0s 1 normal none;*/
+  }
+  
+  @keyframes focus-in-contract {
+      
+    0% {
+      letter-spacing:1em;
+      filter:blur(12px);
+      opacity:0;
+    }
+    100% {
+      filter:blur(0);
+      opacity:1;
+    }
+  }
+  
+
+div.profile__image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.profile__image img {
+    animation-name: fade-in;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fade-in {
+        
+    0% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+
+.profile__name h5{
+    animation-name: bounce-in-zoomin;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-delay: 1s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;
+}
+
+@keyframes bounce-in-zoomin {
+			
+    0% {
+        transform:scale(7);
+        animation-timing-function:ease-in;
+        opacity:0;
+    }
+    35% {
+        transform:scale(1);
+        animation-timing-function:ease-out;
+        opacity:1;
+    }
+    55% {
+        transform:scale(1.5);
+        animation-timing-function:ease-in;
+    }
+    70% {
+        transform:scale(1);
+        animation-timing-function:ease-out;
+    }
+    80% {
+        transform:scale(1.24);
+        animation-timing-function:ease-in;
+    }
+    90% {
+        transform:scale(1);
+        animation-timing-function:ease-out;
+    }
+    95% {
+        transform:scale(1.04);
+        animation-timing-function:ease-in;
+    }
+    100% {
+        transform:scale(1);
+        animation-timing-function:ease-out;
+    }
+}

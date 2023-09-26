@@ -31,7 +31,7 @@ const Navbar = () => {
           <Link
             to="/"
             onClick={() => setToggle(false)}
-            className="d-flex align-items-center"
+            className="d-flex align-items-center "
           >
             <img src={process.env.PUBLIC_URL + '/assets/logo.png'} alt="" />
             VAMSHIDHAR<span className="lastname">DAWOOR</span>
