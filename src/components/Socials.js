@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { FaFacebookF, FaLinkedinIn, FaInstagram } from 'react-icons/fa';
-import { RiTwitterXFill } from 'react-icons/ri';
+import { RiTwitterXFill, RiGithubFill } from 'react-icons/ri';
 import './Socials.css';
 
 const socials = () => {
@@ -13,11 +13,14 @@ const socials = () => {
       <Link to="https://twitter.com/VAMSHIDHARDAWO1">
         <RiTwitterXFill />
       </Link>
-      <Link to="https://www.linkedin.com/in/vamshidhar-dawoor-28039b213/">
-        <FaLinkedinIn />
+      <Link to="https://github.com/vamshidhar644">
+        <RiGithubFill />
       </Link>
       <Link to="https://www.instagram.com/_vamshi.d/">
         <FaInstagram />
+      </Link>
+      <Link to="https://www.linkedin.com/in/vamshidhar-dawoor-28039b213/">
+        <FaLinkedinIn />
       </Link>
     </>
   );
