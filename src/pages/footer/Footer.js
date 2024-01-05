@@ -6,8 +6,8 @@ import Socials from '../../components/Socials';
 
 const Footer = () => {
   return (
-    <div className="footer__parent">
-      <p className="madeby">
+    <div className="footer__parent  flex justify-between p-[1.6rem]">
+      <p className="madeby flex flex-col items-start m-0">
         <span>
           Made with <SiReact />
         </span>

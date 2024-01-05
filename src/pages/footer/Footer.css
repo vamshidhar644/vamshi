@@ -1,21 +1,10 @@
-.footer__parent{
-    padding: 1.6rem;
-    display: flex;
-    justify-content: space-between;
-}
 
-.madeby{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin: 0px;
-}
 
 .madeby span:nth-child(n){
     display: flex;
     align-items: center;
     gap: 6px;
-}
+} 
 
 @media (max-width: 768px){
     .footer__parent{
