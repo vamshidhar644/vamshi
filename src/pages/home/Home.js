@@ -1,5 +1,4 @@
 import React from 'react';
-import './Home.css';
 import './Animations.css';
 import Socials from '../../components/Socials';
 import { Link } from 'react-router-dom';
@@ -55,7 +54,7 @@ const Home = () => {
             Projects
           </Link>
         </div>
-        <p className='mx-2 px-3'>
+        <p className="mx-2 px-3">
           Yo, I'm a wannabe coding wizard diving into the world of computer
           science! Got this fiery passion for web development, rocking the
           JavaScript, React, and Node.js game. Launched into the coding universe

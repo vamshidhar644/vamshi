@@ -1,5 +1,4 @@
 import React from 'react';
-import './Resume.css';
 import { skills, certificates } from '../../constants';
 
 const Resume = () => {

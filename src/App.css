@@ -18,10 +18,6 @@ body{
   margin: 0px;
 }
 
-/* *{
-  font-family: poppins;
-} */
-
 a{
   text-decoration: none;
   color: #000;
@@ -32,9 +28,42 @@ a:hover{
   color: #000;
 }
 
+/* R E S U M E * P A G E */
+.section__body div:nth-child(n){
+  max-width: 100%;
+  padding: 1.4rem;
+  box-shadow: 0px 0px 9px 1px var(--box-bg);
+  color: var(--secondary-text-color);
+}
+
+.section__info strong, .section__info h5, .section__info p{
+  margin: 0px;
+  letter-spacing: 1.1px;
+  word-spacing: 2px;
+}
+
+.skills__grid div:nth-child(n){
+  padding: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 80px;
+  gap: 12px;
+  box-shadow: 0px 0px 9px 1px var(--box-bg);
+}
+
+
+/* F O O T E R * P A G E */
+
 .card__footer a, .footer__socials a{
   display: flex;
   align-items: center;
   font-size: 1.3rem;
   color: var(--secondary-bg);
 }
+
+.madeby span:nth-child(n){
+  display: flex;
+  align-items: center;
+  gap: 6px;
+} 

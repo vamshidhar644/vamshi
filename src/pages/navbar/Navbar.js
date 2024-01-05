@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import './Navbar.css';
 import './Toggle.css';
 import { Link } from 'react-router-dom';
 

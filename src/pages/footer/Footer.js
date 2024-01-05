@@ -1,5 +1,4 @@
 import React from 'react';
-import './Footer.css';
 import { SiReact } from 'react-icons/si';
 import { FaCopyright } from 'react-icons/fa';
 import Socials from '../../components/Socials';
