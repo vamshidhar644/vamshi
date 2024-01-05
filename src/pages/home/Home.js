@@ -55,13 +55,14 @@ const Home = () => {
             Projects
           </Link>
         </div>
-        <p>
-          Aspiring computer science student with a passion for web development
-          and a strong foundation in JavaScript, React, and Node.js. Started
-          coding journey almost two years ago and now working on full-length
-          websites. Seeking opportunities to apply skills and contribute to
-          dynamic projects while continuously learning and growing in a
-          collaborative environment.
+        <p className='mx-2 px-3'>
+          Yo, I'm a wannabe coding wizard diving into the world of computer
+          science! Got this fiery passion for web development, rocking the
+          JavaScript, React, and Node.js game. Launched into the coding universe
+          almost two years back, now conjuring up full-length websites like a
+          digital sorcerer. On the lookout for chances to flex my skills, add
+          some magic to dynamic projects, and soak up knowledge in a team that
+          vibes with collaboration! 🚀✨
         </p>
       </div>
     </div>
