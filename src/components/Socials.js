@@ -2,11 +2,10 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { FaFacebookF, FaLinkedinIn, FaInstagram } from 'react-icons/fa';
 import { RiTwitterXFill, RiGithubFill } from 'react-icons/ri';
-import './Socials.css';
 
 const socials = () => {
   return (
-    <>
+    <div className="h-12 bg-white w-full flex justify-evenly items-center text-xl">
       <Link to="https://www.facebook.com/vamshidhar.navodaya/">
         <FaFacebookF />
       </Link>
@@ -22,7 +21,7 @@ const socials = () => {
       <Link to="https://www.linkedin.com/in/vamshidhar-dawoor-28039b213/">
         <FaLinkedinIn />
       </Link>
-    </>
+    </div>
   );
 };
 

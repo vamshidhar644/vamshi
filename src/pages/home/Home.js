@@ -20,14 +20,13 @@ const Home = () => {
             <h2 className="text-[2.3rem] text-[aliceblue]">
               VAMSHIDHAR DAWOOR
             </h2>
-            <div className="line my-4 bg-[color:var(--secondary-bg)] h-1 w-12 rounded-[3rem]" />
+            <div className="my-4 bg-[color:var(--secondary-bg)] h-1 w-12 rounded-[3rem]" />
             <h5 className="tracking-[4px] text-[color:var(--font-color)]">
               MERN DEV
             </h5>
           </div>
-          <div className="card__footer">
-            <Socials />
-          </div>
+
+          <Socials />
         </div>
       </div>
       <div className="home_section__2 pt-5 pl-32">

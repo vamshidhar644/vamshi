@@ -43,7 +43,7 @@ const Contact = ({ lightmode }) => {
     >
       <div className="contact-card d-flex flex-column min-w-[30%]">
         <span
-          className={`contact-title text-2xl font-semibold ${
+          className={`text-2xl font-semibold ${
             lightmode ? 'light-head' : 'dark-head'
           }`}
         >
@@ -105,7 +105,7 @@ const Contact = ({ lightmode }) => {
             lightmode={lightmode}
             onClose={() => setMsgSent(false)}
           />
-          <div className="contact-me">
+          <div className="d-flex my-3 gap-3 text-2xl">
             <a
               href="https://mail.google.com/mail/?view=cm&fs=1&to=vamshidhardawoor644@gmail.com"
               target="_blank"

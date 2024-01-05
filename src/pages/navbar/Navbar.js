@@ -31,27 +31,24 @@ const Navbar = () => {
       }
     >
       <nav className="navbar p-4">
-        <div className="home__logo">
-          <Link
-            to="/"
-            onClick={() => setToggle(false)}
-            className="d-flex align-items-center gap-3 text-[1.4rem] font-semibold"
-          >
-            <img
-              src={process.env.PUBLIC_URL + '/assets/logo.png'}
-              alt=""
-              className="w-[2.4rem]"
-            />
-            VAMSHIDHAR<span className="lastname">DAWOOR</span>
-          </Link>
-        </div>
-        <div className="page__paths">
+        <Link
+          to="/"
+          onClick={() => setToggle(false)}
+          className="d-flex align-items-center gap-3 text-[1.4rem] font-semibold"
+        >
+          <img
+            src={process.env.PUBLIC_URL + '/assets/logo.png'}
+            alt=""
+            className="w-[2.4rem]"
+          />
+          VAMSHIDHAR<span className="lastname">DAWOOR</span>
+        </Link>
+        <div>
           <div className="toggle hidden" onChange={() => setToggle(!isClicked)}>
             <input
               type="checkbox"
               id="checkbox"
               checked={isClicked}
-              onChange=""
             />
             <label for="checkbox" className="toggle">
               <div className="bars" id="bar1"></div>

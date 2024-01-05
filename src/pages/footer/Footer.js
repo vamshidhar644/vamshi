@@ -15,7 +15,7 @@ const Footer = () => {
           <FaCopyright /> 2023 | Vamshidhar Dawoor
         </span>
       </p>
-      <div className="footer__socials">
+      <div className="w-1/5">
         <Socials />
       </div>
     </div>

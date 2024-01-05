@@ -11,7 +11,7 @@ const Projects = () => {
       </center>
 
       <hr />
-      <div className="projects__container d-flex flex-column gap-8">
+      <div className="d-flex flex-column gap-8">
         {projects.map((project, i) => {
           return (
             <div
@@ -19,7 +19,7 @@ const Projects = () => {
               key={i}
             >
               <div className="project_box__1 d-flex justify-content-around flex-column">
-                <div className="project__header px-5 border-l-[color:var(--primary-bg)] mx-0 my-[1.6rem] border-l-[12px] border-solid">
+                <div className="px-5 border-l-[color:var(--primary-bg)] mx-0 my-[1.6rem] border-l-[12px] border-solid">
                   <h2 className="m-0 text-[color:var(--secondary-bg)] text-2xl font-medium text-[color:var(--primary-bg)]">
                     {project.title}
                   </h2>
@@ -36,13 +36,11 @@ const Projects = () => {
 
                 <p className="px-5 text-center mb-3">{project.desc}</p>
               </div>
-              <div className="project_box__2">
-                <img
-                  src={process.env.PUBLIC_URL + '/assets/' + project.image}
-                  alt=""
-                  className="h-100 w-100"
-                />
-              </div>
+              <img
+                src={process.env.PUBLIC_URL + '/assets/' + project.image}
+                alt=""
+                className="h-100 w-100"
+              />
             </div>
           );
         })}

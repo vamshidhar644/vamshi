@@ -10,15 +10,15 @@ const Resume = () => {
       </center>
 
       <hr />
-      <div className="skills__section">
+      <div>
         <h4 className="font-bold my-3 text-xl">Skills set</h4>
         <div className="skills__grid d-flex flex-wrap justify-content-center gap-[1.4rem] mb-3">
           {skills &&
             skills.map((skill, i) => {
               return (
-                <div className="Skill__box" key={i}>
-                  <span className="icon text-[1.3rem]">{skill.icon}</span>
-                  <span className="name">{skill.name}</span>
+                <div key={i}>
+                  <span className="text-[1.3rem]">{skill.icon}</span>
+                  <span>{skill.name}</span>
                 </div>
               );
             })}
@@ -26,7 +26,7 @@ const Resume = () => {
       </div>
 
       <hr />
-      <div className="certificate__section">
+      <div>
         <h4 className="font-bold my-3 text-xl">Certificates & Letters</h4>
         <div className="section__body">
           {certificates.map((data, i) => {
@@ -43,9 +43,9 @@ const Resume = () => {
         </div>
       </div>
 
-      <div className="intern__section">
+      <div>
         <hr />
-        <h4 className="font-bold my-3 text-xl">Internship Trainings</h4>
+        <h4 className="font-bold my-3 text-xl">Internship Training</h4>
         <div className="section__body">
           <div className="section__info">
             <strong className="text-[1.1rem] font-semibold">
@@ -57,9 +57,9 @@ const Resume = () => {
         </div>
       </div>
 
-      <div className="accomplishment__section">
+      <div>
         <hr />
-        <h4 className="font-bold my-3 text-xl">Accomplishments</h4>
+        <h4 className="font-bold my-3 text-xl">Accomplishment</h4>
         <div className="section__body">
           <div className="section__info">
             <strong className="text-[1.1rem] font-semibold">

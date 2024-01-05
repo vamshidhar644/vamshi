@@ -31,3 +31,10 @@ a:hover{
   text-decoration: none;
   color: #000;
 }
+
+.card__footer a, .footer__socials a{
+  display: flex;
+  align-items: center;
+  font-size: 1.3rem;
+  color: var(--secondary-bg);
+}
