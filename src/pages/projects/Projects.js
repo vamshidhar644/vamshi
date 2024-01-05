@@ -19,7 +19,7 @@ const Projects = () => {
               key={i}
             >
               <div className="project_box__1 d-flex justify-content-around flex-column">
-                <div className="project__header px-5 border-l-[color:var(--primary-bg)] mx-0 my-[2.4rem] border-l-[12px] border-solid">
+                <div className="project__header px-5 border-l-[color:var(--primary-bg)] mx-0 my-[1.6rem] border-l-[12px] border-solid">
                   <h2 className="m-0 text-[color:var(--secondary-bg)] text-2xl font-medium text-[color:var(--primary-bg)]">
                     {project.title}
                   </h2>
