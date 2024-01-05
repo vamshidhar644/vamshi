@@ -25,20 +25,28 @@ const Navbar = () => {
   }, []);
 
   return (
-    <header className={isNavFixed ? 'fixed-nav position-fixed w-100' : ''}>
+    <header
+      className={
+        isNavFixed ? 'z-[999] bg-white left-0 top-0 position-fixed w-100' : ''
+      }
+    >
       <nav className="navbar p-4">
         <div className="home__logo">
           <Link
             to="/"
             onClick={() => setToggle(false)}
-            className="d-flex align-items-center "
+            className="d-flex align-items-center gap-3 text-[1.4rem] font-semibold"
           >
-            <img src={process.env.PUBLIC_URL + '/assets/logo.png'} alt="" />
+            <img
+              src={process.env.PUBLIC_URL + '/assets/logo.png'}
+              alt=""
+              className="w-[2.4rem]"
+            />
             VAMSHIDHAR<span className="lastname">DAWOOR</span>
           </Link>
         </div>
         <div className="page__paths">
-          <div className="toggle" onChange={() => setToggle(!isClicked)}>
+          <div className="toggle hidden" onChange={() => setToggle(!isClicked)}>
             <input
               type="checkbox"
               id="checkbox"
@@ -52,7 +60,7 @@ const Navbar = () => {
             </label>
           </div>
           <ul
-            className={`${
+            className={`gap-12 ${
               isClicked
                 ? 'menu_open d-flex position-fixed m-0 h-100 w-100 flex-column justify-content-start align-items-center pt-5'
                 : 'menu_close d-flex m-0'
