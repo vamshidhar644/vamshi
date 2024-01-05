@@ -1,25 +1,7 @@
-.resume__parent{
-    padding: 2rem 20rem;
-}
-
-.section__body{
-    display: flex;
-    flex-direction: column;
-    gap: 1.4rem;
-    max-width: 100%;
-}
-
-.resume__parent div:nth-child(n) h4{
-    font-size: 1.6rem;
-    margin: 12px 0px;
-    font-weight: 500;
-}
-
 .section__body div:nth-child(n){
     max-width: 100%;
     padding: 1.4rem;
     box-shadow: 0px 0px 9px 1px var(--box-bg);
-    /* background-color: var(--text-color); */
     color: var(--secondary-text-color);
 }
 
@@ -27,25 +9,6 @@
     margin: 0px;
     letter-spacing: 1.1px;
     word-spacing: 2px;
-}
-
-.section__info strong{
-    font-size: 1.1rem;
-    font-weight: 600;
-}
-
-.section__info h5{
-    font-size: 14px;
-    font-weight: 600;
-}
-
-.section__info p{
-    font-weight: 300;
-    font-size: 14px;
-}
-
-.skills__grid{
-    gap: 1.4rem;
 }
 
 .skills__grid div:nth-child(n){
@@ -56,17 +19,6 @@
     min-width: 80px;
     gap: 12px;
     box-shadow: 0px 0px 9px 1px var(--box-bg);
-    /* background-color: var(--text-color); */
-}
-
-.Skill__box .icon{
-    font-size: 1.3rem;
-}
-
-.education__section h6{
-    margin: 0px;
-    font-size: 18px;
-    font-weight: 400;
 }
 
 @media (max-width: 768px){

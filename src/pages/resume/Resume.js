@@ -1,75 +1,23 @@
 import React from 'react';
 import './Resume.css';
-import {
-  SiReact,
-  SiMongodb,
-  SiJavascript,
-  SiExpress,
-  SiHtml5,
-  SiGit,
-  SiNpm,
-  SiFirebase,
-} from 'react-icons/si';
-import { DiJava } from 'react-icons/di';
-import { IoLogoNodejs } from 'react-icons/io';
+import { skills, certificates } from '../../constants';
 
 const Resume = () => {
-  const skills = [
-    { icon: <SiMongodb />, name: 'MongoDB' },
-    { icon: <SiExpress />, name: 'ExpressJs' },
-    { icon: <SiReact />, name: 'ReactJs' },
-    { icon: <IoLogoNodejs />, name: 'NodeJs' },
-    { icon: <SiJavascript />, name: 'JavaScript' },
-    { icon: <DiJava />, name: 'Java' },
-    { icon: <SiHtml5 />, name: 'HTML' },
-    { icon: <SiGit />, name: 'Git' },
-    { icon: <SiNpm />, name: 'npm' },
-    { icon: <SiFirebase />, name: 'Firebase' },
-  ];
-
   return (
-    <div className="resume__parent">
+    <div className="resume__parent px-80 py-8">
       <center>
-        <h2>RESUME</h2>
+        <h2 className="font-bold text-2xl my-2">RESUME</h2>
       </center>
 
       <hr />
-      <div className="education__section">
-        <h4>Education</h4>
-        <div className="section__body">
-          <div className="section__info">
-            <strong>Bachelor of Technology</strong>
-            <h5>Computer Science and Engineering</h5>
-            <p>Vellore Institute of Technology, Amaravati, Andhra Pradesh</p>
-            <p>CGPA: 8.97 (till 7th semester)</p>
-            <h6>2020 - 2024</h6>
-          </div>
-
-          <div className="section__info">
-            <strong>Intermediate</strong>
-            <p>Akshara Junior College, Hyderabad</p>
-            <p>Perc: 96.8%</p>
-            <h6>2018 - 2020</h6>
-          </div>
-
-          <div className="section__info">
-            <strong>High School</strong>
-            <p>Jawahar Navodaya Vidyalaya, Wargal</p>
-            <p>Perc: 81.4%</p>
-            <h6>2013 - 2018</h6>
-          </div>
-        </div>
-      </div>
-
-      <hr />
       <div className="skills__section">
-        <h4>Skills set</h4>
-        <div className="skills__grid d-flex flex-wrap justify-content-center">
+        <h4 className="font-bold my-3 text-xl">Skills set</h4>
+        <div className="skills__grid d-flex flex-wrap justify-content-center gap-[1.4rem] mb-3">
           {skills &&
             skills.map((skill, i) => {
               return (
                 <div className="Skill__box" key={i}>
-                  <span className="icon">{skill.icon}</span>
+                  <span className="icon text-[1.3rem]">{skill.icon}</span>
                   <span className="name">{skill.name}</span>
                 </div>
               );
@@ -79,52 +27,44 @@ const Resume = () => {
 
       <hr />
       <div className="certificate__section">
-        <h4>Certificates & Letters</h4>
+        <h4 className="font-bold my-3 text-xl">Certificates & Letters</h4>
         <div className="section__body">
-          <div className="section__info">
-            <strong>Appreciation Letter</strong>
-            <p>NR Kids E-Commerce Shopping website</p>
-            <h5>Nischala Reddy Kids</h5>
-          </div>
-
-          <div className="section__info">
-            <strong>MERN Fullstack Internship Program</strong>
-            <p>Completion Certificate</p>
-            <h5>Ethnus</h5>
-          </div>
-
-          <div className="section__info">
-            <strong>MongoDB Node.js Developer Path</strong>
-            <p>Completion Certificate</p>
-            <h5>MongoDB</h5>
-          </div>
+          {certificates.map((data, i) => {
+            return (
+              <div className="section__info mb-3">
+                <strong className="text-[1.1rem] font-semibold">
+                  {data.title}
+                </strong>
+                <p>{data.desc}</p>
+                <h5>{data.org}</h5>
+              </div>
+            );
+          })}
         </div>
       </div>
 
       <div className="intern__section">
         <hr />
-        <h4>Internship Trainings</h4>
+        <h4 className="font-bold my-3 text-xl">Internship Trainings</h4>
         <div className="section__body">
           <div className="section__info">
-            <strong>MERN Full Stack Internship Program</strong>
+            <strong className="text-[1.1rem] font-semibold">
+              MERN Full Stack Internship Program
+            </strong>
             <p>May 2023 - July 2023</p>
             <h5>Ethnus</h5>
-          </div>
-
-          <div className="section__info">
-            <strong>Verzeo – Web Development with IBM</strong>
-            <p>August 2022 - October 2022</p>
-            <h5>Verzeo</h5>
           </div>
         </div>
       </div>
 
       <div className="accomplishment__section">
         <hr />
-        <h4>Accomplishments</h4>
+        <h4 className="font-bold my-3 text-xl">Accomplishments</h4>
         <div className="section__body">
           <div className="section__info">
-            <strong>Ranked 1st in Senior Vocabulary Bee Competition</strong>
+            <strong className="text-[1.1rem] font-semibold">
+              Ranked 1st in Senior Vocabulary Bee Competition
+            </strong>
             <p>North South Foundation</p>
           </div>
         </div>
